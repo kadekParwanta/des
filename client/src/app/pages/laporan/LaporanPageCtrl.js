@@ -9,7 +9,7 @@
       .controller('LaporanPageCtrl', LaporanPageCtrl);
 
   /** @ngInject */
-  function LaporanPageCtrl($scope, $filter, editableOptions, editableThemes) {
+  function LaporanPageCtrl($scope, $filter, editableOptions, editableThemes, Laporan) {
 
     $scope.smartTablePageSize = 10;
 
@@ -708,7 +708,15 @@
     editableThemes['bs3'].submitTpl = '<button type="submit" class="btn btn-primary btn-with-icon"><i class="ion-checkmark-round"></i></button>';
     editableThemes['bs3'].cancelTpl = '<button type="button" ng-click="$form.$cancel()" class="btn btn-default btn-with-icon"><i class="ion-close-round"></i></button>';
 
+    $scope.laporans = [];
+    function init() {
+        $scope.laporans.length = 0;
+        Laporan.find({include:'fotos'},function(laporans){
+            $scope.laporans = laporans;
+        })
+    }
 
+    init();
   }
 
 })();

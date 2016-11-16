@@ -2,5 +2,17 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodb": {
+    "url": "mongodb://localhost:27017/des",
+    "database": "des",
+    "name": "mongodb",
+    "connector": "mongodb"
+  },
+  "s3storage": {
+    "name": "s3storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storages"
   }
 }

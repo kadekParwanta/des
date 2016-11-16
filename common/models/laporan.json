@@ -1,0 +1,27 @@
+{
+  "name": "Laporan",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "deskripsi": {
+      "type": "string",
+      "required": true
+    },
+    "lokasi": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fotos": {
+      "type": "hasMany",
+      "model": "Foto",
+      "foreignKey": "laporanId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
