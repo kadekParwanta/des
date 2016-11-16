@@ -7,12 +7,12 @@ angular.module('BlurAdmin', [
   'ui.router',
   'ngTouch',
   'toastr',
+  'lbServices',
   'smart-table',
-  "xeditable",
+  'xeditable',
   'ui.slimscroll',
   'ngJsTree',
   'angular-progress-button-styles',
-
   'BlurAdmin.theme',
   'BlurAdmin.pages'
 ]);
