@@ -15,7 +15,7 @@
     // 'BlurAdmin.pages.tables',
     // 'BlurAdmin.pages.charts',
     // 'BlurAdmin.pages.maps',
-    'BlurAdmin.pages.laporan',
+    'BlurAdmin.pages.school',
     'BlurAdmin.pages.profile'
   ])
       .config(routeConfig);

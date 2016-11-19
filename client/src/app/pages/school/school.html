@@ -1,0 +1,42 @@
+<div class="widgets">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">Daftar Sekolah</div>
+                <div class="panel-body">
+                    <table datatable="ng" class="table row-border hover">
+                        <thead>
+                        <tr>
+                            <th><a href="">Name</a></th>
+                            <th><a href="">Profile</a></th>
+                            <th><a href="">Hymne</a></th>
+                            <th><a href="">Photos</a></th>
+                            <th><a href="">Actions</a></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="school in schools">
+                            <td class="">{{school.name}}</td>
+                            <td class="">{{school.profile}}</td>
+                            <td class="">{{school.hymne}}</td>
+                            <td class="">
+                                <div ng-repeat="media in school.photos">
+                                <img ng-src="{{media.url}}" height="42" width="42">
+                                </div>
+                            </td>
+                            <td class="">
+                                <button class="btn btn-success" title="Edit this field" ng-click="edit(school)"><i class="fa fa-edit"></i></button>
+                                <button title="Delete this field" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-primary btn-with-icon"><i class="fa fa-graduation-cap"></i>Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
