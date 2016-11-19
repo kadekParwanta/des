@@ -1,12 +1,12 @@
 {
-  "name": "user",
-  "base": "User",
+  "name": "Student",
+  "base": "Person",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Name": {
+    "motto": {
       "type": "string"
     }
   },

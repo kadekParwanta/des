@@ -1,0 +1,26 @@
+{
+  "name": "Yearbook",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "coverUrl": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "epub": {
+      "type": "hasOne",
+      "model": "Epub",
+      "foreignKey": "yearbookId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

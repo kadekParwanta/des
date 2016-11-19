@@ -1,15 +1,11 @@
 {
-  "name": "user",
-  "base": "User",
+  "name": "Container",
+  "base": "Model",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "Name": {
-      "type": "string"
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {},
   "acls": [],

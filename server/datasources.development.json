@@ -12,8 +12,7 @@
   "s3storage": {
     "name": "s3storage",
     "connector": "loopback-component-storage",
-    "provider": "amazon",
-    "key": "P7J045hAKo7lu2RZhY5Bp+5QzJjOZpLQQn5cIuqM",
-    "keyId": "AKIAJNWT7KSUXLHKGHIQ"
+    "provider": "filesystem",
+    "root": "./storages"
   }
 }

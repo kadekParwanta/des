@@ -1,0 +1,36 @@
+{
+  "name": "Generation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "classes": {
+      "type": "hasMany",
+      "model": "Class",
+      "foreignKey": "generationId"
+    },
+    "yearbook": {
+      "type": "hasOne",
+      "model": "Yearbook",
+      "foreignKey": "generationId"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Media",
+      "foreignKey": "generationId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

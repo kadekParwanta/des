@@ -1,12 +1,12 @@
 {
-  "name": "user",
-  "base": "User",
+  "name": "Teacher",
+  "base": "Person",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Name": {
+    "NIK": {
       "type": "string"
     }
   },

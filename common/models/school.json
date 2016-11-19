@@ -1,0 +1,40 @@
+{
+  "name": "School",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "type": "string"
+    },
+    "hymne": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "generations": {
+      "type": "hasMany",
+      "model": "Generation",
+      "foreignKey": "schoolId"
+    },
+    "teachers": {
+      "type": "hasMany",
+      "model": "Teacher",
+      "foreignKey": "schoolId"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Media",
+      "foreignKey": "schoolId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

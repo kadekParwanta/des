@@ -1,0 +1,26 @@
+{
+  "name": "Epub",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "author": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "epubpages": {
+      "type": "hasMany",
+      "model": "Epubpage",
+      "foreignKey": "epubId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Class",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "students": {
+      "type": "hasMany",
+      "model": "Student",
+      "foreignKey": "classId"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Media",
+      "foreignKey": "classId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,13 +1,14 @@
 {
-  "name": "user",
-  "base": "User",
+  "name": "Epubpage",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Name": {
-      "type": "string"
+    "pageNo": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],

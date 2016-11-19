@@ -44,5 +44,49 @@
   "Foto": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "Student": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Teacher": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Class": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Generation": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "School": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Yearbook": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Epub": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Epubpage": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Media": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "s3storage",
+    "public": true
   }
 }
